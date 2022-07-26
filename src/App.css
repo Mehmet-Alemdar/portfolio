@@ -1,0 +1,116 @@
+body {
+  background-color: #171717;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFEDDC;
+}
+
+#head {
+  flex: 1;
+  background-color: #FFEDDC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-info {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 5rem 0 5rem;
+  align-items: center;
+  width: 90%;
+}
+.head-info-title {
+  flex: 1;
+}
+.head-info-title-2 {
+  text-align: center;
+  float: left;
+}
+.head-info-title-2 h1:first-child {
+  font-weight: 200;
+}
+.head-info-title-2 h1:last-child {
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+}
+.head-info-mail {
+  flex: 1;
+  margin: auto 0;
+}
+.head-info-mail a {
+  float: right;
+  text-decoration: none;
+}
+.head-info-mail a:last-child {
+  display: none;
+}
+.head-info-mail a:hover {
+  text-decoration: underline;
+}
+.head-redirect {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.head-redirect button {
+  margin: 2rem 1rem 0 1rem;
+  padding: 0.2rem;
+  background-color: #FFEDDC;
+  border: none;
+  font-size: 1rem;
+}
+
+.selectedRedirect {
+  border-bottom: 1px solid #171717;
+}
+a {
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #171717;
+}
+.head-redirect p:hover {
+  font-weight: 400;
+}
+
+
+#links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  background-color: #171717;
+  padding: 0.5rem 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .head-info {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  .head-redirect button {
+    font-size: 0.9rem;
+  }
+  .head-info-mail {
+    margin-top: 1rem;
+  }
+  .head-info-mail a:first-child {
+    display: none;
+  }
+  .head-info-mail a:last-child {
+    display: block;
+  }
+  .head-info-mailIcon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
