@@ -67,6 +67,7 @@ body {
   background-color: #FFEDDC;
   border: none;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .selectedRedirect {
